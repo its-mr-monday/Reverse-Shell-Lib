@@ -62,5 +62,17 @@ The following repository contains multiple versions of a reverse tcp netcat shel
   
     socat -d -d TCP4-LISTEN:[port] STDOUT
     
-  Once your listener is up just wait for the payload to come your way and get them flags XD
+  A note for these is they will only work for the POSIX payloads
+  
+  In order to listen for the Windows payload the command has to be slightly tweaked
+  
+  Windows Listener:
+  
+    stty raw -echo; (stty size; cat) | nc -nvlp [port]
+    
+    Note: this will wreck your shells sizing so start a new window for each use
+    
+  Now start looking for those flags happy hacking! XD
+  
+    
     
