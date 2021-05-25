@@ -55,9 +55,11 @@ The following repository contains multiple versions of a reverse tcp netcat shel
   These reverse shells were all written for ease of use attackers can open a simple netcat or socat listener to receive the payloads
   
   Netcat:
+  
     nc -nvlp [port]
     
   Socat:
+  
     socat -d -d TCP4-LISTEN:[port] STDOUT
     
   Once your listener is up just wait for the payload to come your way and get them flags XD
