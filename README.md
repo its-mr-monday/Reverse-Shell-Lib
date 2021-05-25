@@ -52,7 +52,7 @@ The following repository contains multiple versions of a reverse tcp netcat shel
     
     
 # Attacker Listener
-  These reverse shells were all written for ease of use attackers can open a simple netcat or socat listener to receive the payloads
+  These reverse shells were all written for ease of use, attackers can open a simple netcat or socat listener to receive the payloads
   
   Netcat:
   
