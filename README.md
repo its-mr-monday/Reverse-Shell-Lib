@@ -1,5 +1,5 @@
 # Reverse-Shell-Lib
-The following repository contains multiple versions of a reverse tcp netcat shell for use on exploited Linux or Unix machines
+The following repository contains multiple versions of a reverse tcp netcat shell for use on exploited POSIX or WIN machines
 
 # C Reverse Shell
   In order to use this shell it must be compiled with the following command
